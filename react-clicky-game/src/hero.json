@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "Iron Man",
+      "image": "https://images.indianexpress.com/2018/04/avengers-iron-man.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Black Panther",
+      "image": "https://images.indianexpress.com/2018/04/avengers-blackpanther.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Black Widow",
+      "image": "https://images.indianexpress.com/2018/04/avengers-blackwidow.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Captain America",
+      "image": "https://images.indianexpress.com/2018/04/avengers-captain-america.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dr. Strange",
+      "image": "https://images.indianexpress.com/2018/04/avengers-doctorstrange.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Hulk",
+      "image": "https://images.indianexpress.com/2018/04/avengers-hulk.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Scarlet Witch",
+      "image": "https://images.indianexpress.com/2018/04/avengers-scarletwitch.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Spider Man",
+      "image": "https://images.indianexpress.com/2018/04/avengers-spiderman.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Star Lord",
+      "image": "https://images.indianexpress.com/2018/04/avengers-starlord.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Thor",
+      "image": "https://images.indianexpress.com/2018/04/avengers-thor.jpg"
+    }
+  ]
+  
