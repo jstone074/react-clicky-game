@@ -1,13 +1,14 @@
 import React from "react";
 import "./style.css";
 
-function HeroCard(props) {
+const HeroCard = props => {
     return (
         <div ClassName = "card">
-            <div ClassName = "img-container">
-                <img alt={props.name} src={props.image}/>
-            </div>
+            <div onClick={() => props.clickHeroFunction(props.id)} ClassName = "img-container">
+               <img alt={props.name} src={props.image}/>                          
+            </div> 
         </div>
+        
     );
 }
 

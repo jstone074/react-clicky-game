@@ -7,19 +7,40 @@ import './App.css';
 
 class App extends Component {
  state = {
-    hero
-   
+    hero,
+    heroArray: [],
+    score: 0   
  };
+
+clickHeroFunction = id => {
+  const clickedHeroArray = [];
+  const currentHeroArray = this.state.heroArray;
+  
+  clickedHeroArray.push(id);
+
+  this.setState({
+    
+    heroArray: [...currentHeroArray,clickedHeroArray]    
+    
+  });
+  console.log(this.state.heroArray);
+
+
+}
  
   render() {
-    return (
+  return (
     <Wrapper>
       {this.state.hero.map(props =>
       <HeroCard
-        image={props.image}      
+        key={props.id}
+        id={props.id}
+        image={props.image}
+        clickHeroFunction={this.clickHeroFunction}                 
       />
       )}
     </Wrapper>
+    
     )
     
 }
