@@ -13,6 +13,7 @@ class App extends Component {
  };
 
 clickHeroFunction = id => {
+  
   const clickedHeroArray = [];
   const currentHeroArray = this.state.heroArray;
   
