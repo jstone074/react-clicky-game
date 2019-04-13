@@ -14,22 +14,38 @@ class App extends Component {
 
 clickHeroFunction = id => {
   
-  const clickedHeroArray = [];
-  const currentHeroArray = this.state.heroArray;
-  
-  clickedHeroArray.push(id);
+  let clickedHeroArray = this.state.heroArray;
+  let checker = clickedHeroArray.includes(id);
 
-  this.setState({
+  if(clickedHeroArray.indexOf(id) === -1)
+    {
+      console.log("YOU GUESSED CORRECTLY!!!!!")
+
+      clickedHeroArray.push(id)
+      this.setState({
+        
+        heroArray: clickedHeroArray,
+        score: this.state.score+1 
+      })
+    }
+    else{
+      console.log("WRONG!!!!");
+          
+      this.setState({
     
-    heroArray: [...currentHeroArray,clickedHeroArray]    
-    
-  });
-  console.log(this.state.heroArray);
+        heroArray: [],
+        score: 0   
+      });
+    }
+
+  // console.log("This is my guess score value...",guessScore);
 
 
 }
  
   render() {
+    // console.log(this.state.heroArray);
+    // console.log(this.state.score);
   return (
     <Wrapper>
       {this.state.hero.map(props =>
