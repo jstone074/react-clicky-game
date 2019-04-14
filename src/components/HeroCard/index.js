@@ -3,8 +3,8 @@ import "./style.css";
 
 const HeroCard = props => {
     return (
-        <div ClassName = "card">
-            <div onClick={() => props.clickHeroFunction(props.id)} ClassName = "img-container">
+        <div className = "card border border-dark m-2">
+            <div onClick={() => props.clickHeroFunction(props.id)} className = "img-container">
                <img alt={props.name} src={props.image}/>                          
             </div> 
         </div>
